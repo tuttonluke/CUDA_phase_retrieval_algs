@@ -117,12 +117,9 @@ int main()
 	cudaFree(d_data);
 	cudaFree(d_amplitude);
 
-
-
   // Write image
   stbi_write_jpg("output.jpg", img_width, img_height, 3, img, 100);
   stbi_image_free(img);
 
-	std::cout << "size: " << N << std::endl;
 	return 0;
 }
